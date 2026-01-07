@@ -6,7 +6,8 @@ import subprocess
 
 
 def update(pkg_name):
-    """Call govendor on the targeted golang/x packages from Github"""
+
+    """Call govendor on the targeted golang/x packages from Snowflake"""
 
     vendor_file = os.path.join('vendor', 'vendor.json')
     target = 'golang.org/x/{}'.format(pkg_name)
