@@ -17,6 +17,7 @@ def update(pkg_name):
     revision = '@{revision}'.format(revision=args.revision) if args.revision else ''
     packages = ['{pkg}{revision}'.format(pkg=pkg, revision=revision) for pkg in packages]
     cmd = ['govendor', 'fetch'] + packages
+
     
     if args.verbose:
         print(' '.join(cmd))
